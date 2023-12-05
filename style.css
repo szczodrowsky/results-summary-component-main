@@ -60,7 +60,7 @@ body {
   font-style: normal;
   font-feature-settings: "clig" off, "liga" off;
   min-width: 220px;
-  background: var(--Very-Light-blue, #ecf2ff);
+  background-color: var(--Very-Light-blue, #ecf2ff);
 }
 @media (min-width: 600px) {
   body {
@@ -80,7 +80,8 @@ body {
   .result-summary {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 1.5rem;
+    /* overflow: hidden; */
+    background-color: var(--White, #fff);
   }
 }
 /*result styling */
@@ -98,7 +99,7 @@ body {
 }
 @media (min-width: 600px) {
   .result {
-    border-radius: 2rem;
+    border-radius: 2em;
     padding: 1.5rem;
   }
 }
@@ -221,6 +222,7 @@ body {
 }
 
 .value[data-item-type="accent-1"] {
+  color: var(--Red, #f55);
   border-radius: 0.75rem;
   background: var(
     --red-95-white,
@@ -234,6 +236,7 @@ body {
 }
 
 .value[data-item-type="accent-2"] {
+  color: var(--Yellow, #ffb21e);
   border-radius: 0.75rem;
   background: var(
     --yellow-95-white,
@@ -247,6 +250,7 @@ body {
 }
 
 .value[data-item-type="accent-3"] {
+  color: var(--Green, #00bb8f);
   border-radius: 0.75rem;
   background: var(
     --green-95-white,
@@ -259,6 +263,7 @@ body {
   );
 }
 .value[data-item-type="accent-4"] {
+  color: var(--Blue, #1125d6);
   border-radius: 0.75rem;
   background: var(
     --blue-95-white,
@@ -278,6 +283,7 @@ body {
   background: var(--Dark-Navy, #303b59);
   border: none;
   cursor: pointer;
+  color: var(--White, #fff);
 }
 
 .continue:hover {
